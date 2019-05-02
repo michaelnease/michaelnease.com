@@ -1,7 +1,8 @@
 export const theme = {
   colors: {
     black: "#141414",
-    white: "#fff"
+    white: "#fff",
+    gray: "#e0e0e0"
   },
   spacing: {
     margin: "15px"

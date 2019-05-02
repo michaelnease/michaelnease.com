@@ -85,3 +85,7 @@ typings/
 
 # Mac hidden file
 .DS_Store
+
+# Next.js
+.next/
+out/

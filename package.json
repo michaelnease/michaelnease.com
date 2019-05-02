@@ -1,0 +1,37 @@
+{
+  "name": "michaelnease.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "test": "jest",
+    "build": "next build",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "Michael Nease",
+  "license": "ISC",
+  "dependencies": {
+    "enzyme-adapter-react-16": "^1.12.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-jest": "24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-styled-components": "^1.10.0",
+    "enzyme": "^3.9.0",
+    "jest": "24.1.0",
+    "jest-styled-components": "^6.3.1",
+    "react-testing-library": "^5.4.2"
+  }
+}

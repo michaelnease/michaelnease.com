@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 60px;
+  width: 100%;
+  background-color: #141414;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.c1 {
+  width: 52px;
+  height: 39px;
+  background: url("../static/images/header/invaders-nav.svg");
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-transition: background-position 0.4s;
+  transition: background-position 0.4s;
+  background-position: 0 0;
+}
+
+.c2 ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 li {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.c2 a {
+  color: white;
+}
+
+<header
+    class="c0"
+  >
+    <h1
+      class="c1"
+    >
+      Michael Nease
+    </h1>
+    <nav
+      class="c2"
+    >
+      <ul>
+        <li>
+          <a
+            href="#about"
+            name="crab"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="#skill"
+            name="antenna"
+          >
+            Skills
+          </a>
+        </li>
+        <li>
+          <a
+            href="#portfolio"
+            name="legs"
+          >
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            name="octopus"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</DocumentFragment>
+`;

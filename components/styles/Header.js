@@ -43,12 +43,42 @@ export const Navigation = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
+    background-color: ${props => props.theme.colors.black};
   }
   li {
-    margin: 0 10px;
+    margin: 0 1rem;
     text-transform: uppercase;
   }
   a {
     color: white;
+  }
+
+  @media (max-width: 700px) {
+    position: absolute;
+    top: ${props => props.theme.bar.height};
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    ul {
+      display: ${props => (props.open ? "block" : "none")};
+    }
+    li {
+      height: 4rem;
+    }
+  }
+`;
+
+export const Hamburger = styled.div`
+  display: none;
+
+  @media (max-width: 700px) {
+    display: block;
+    div {
+      width: 30px;
+      height: 5px;
+      background-color: ${props => props.theme.colors.white};
+      margin: 6px 0;
+    }
   }
 `;

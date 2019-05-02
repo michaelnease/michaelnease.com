@@ -1,17 +1,22 @@
 import { useState } from "react";
-import { Bar, Navigation, Invader } from "./styles";
+import { Bar, Navigation, Invader, Hamburger } from "./styles";
 
 const Header = () => {
   const [name, setInvaderName] = useState("");
+  const [open, setHamburger] = useState(false);
 
   const handleMouseEnter = e => {
     setInvaderName(e.target.name);
   };
 
+  const handleHamburgerClick = () => {
+    setHamburger(!open);
+  };
+
   return (
     <Bar>
       <Invader invader={name}>Michael Nease</Invader>
-      <Navigation>
+      <Navigation open={open}>
         <ul>
           <li>
             <a onMouseEnter={handleMouseEnter} name="crab" href="#about">
@@ -35,6 +40,11 @@ const Header = () => {
           </li>
         </ul>
       </Navigation>
+      <Hamburger onClick={handleHamburgerClick}>
+        <div />
+        <div />
+        <div />
+      </Hamburger>
     </Bar>
   );
 };

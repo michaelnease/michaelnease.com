@@ -5,7 +5,8 @@ export const theme = {
     gray: "#e0e0e0"
   },
   spacing: {
-    margin: "15px"
+    margin: "15px",
+    padding: "15px"
   },
   effects: {
     bs: "-5px 5px 5px 0px rgba(0, 0, 0, 0.2)"

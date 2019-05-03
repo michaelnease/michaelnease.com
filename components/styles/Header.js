@@ -19,7 +19,7 @@ export const Bar = styled.header`
 export const Invader = styled.h1`
   width: 52px;
   height: 39px;
-  background: url("../static/images/header/invaders-nav.svg");
+  background: url("/static/images/header/invaders-nav.svg");
   text-indent: -9999px;
   overflow: hidden;
   transition: background-position 0.3s;
@@ -52,11 +52,9 @@ export const Navigation = styled.nav`
   a {
     color: white;
   }
-
   a:hover {
     color: ${props => props.theme.colors.gray};
   }
-
   @media (max-width: 700px) {
     position: absolute;
     top: ${props => props.theme.bar.height};
@@ -75,7 +73,6 @@ export const Navigation = styled.nav`
 
 export const Hamburger = styled.div`
   display: none;
-
   @media (max-width: 700px) {
     display: block;
     div {
@@ -85,26 +82,4 @@ export const Hamburger = styled.div`
       margin: 6px 0;
     }
   }
-`;
-
-export const Dropdown = styled.div`
-  position: absolute;
-  z-index: 1;
-  right: 50%;
-  transform: translate(50%);
-  top: 59px;
-  width: 124px;
-  height: 210px;
-  background: url("../static/images/header/mocmennemcom.svg") no-repeat center
-    center;
-
-  @keyframes slideDown {
-    0% {
-      top: -210px;
-    }
-    100% {
-      top: 59px;
-    }
-  }
-  animation: 0.5s ease-out 1s 1 slideDown;
 `;

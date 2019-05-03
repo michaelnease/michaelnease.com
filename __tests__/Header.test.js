@@ -11,7 +11,7 @@ import Header from "../components/Header";
 
 configure({ adapter: new Adapter() });
 
-describe("With React Testing Library Snapshot", () => {
+describe("<Header />", () => {
   const wrapper = shallow(<Header />);
 
   it("Should render 1 <Invader /> element", () => {

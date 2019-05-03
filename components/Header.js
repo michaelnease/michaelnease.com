@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Bar, Navigation, Invader, Hamburger, Dropdown } from "./styles";
+import { Bar, Navigation, Invader, Hamburger } from "./styles";
 
 const Header = () => {
   const [name, setInvaderName] = useState("");
@@ -16,7 +16,6 @@ const Header = () => {
   return (
     <Bar>
       <Invader invader={name}>Michael Nease</Invader>
-      <Dropdown />
       <Navigation open={open}>
         <ul>
           <li>

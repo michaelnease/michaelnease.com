@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
+exports[`<Header /> Should match Snapshot 1`] = `
 <DocumentFragment>
   .c0 {
   position: -webkit-sticky;
@@ -33,7 +33,7 @@ exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
 .c1 {
   width: 52px;
   height: 39px;
-  background: url("../static/images/header/invaders-nav.svg");
+  background: url("/static/images/header/invaders-nav.svg");
   text-indent: -9999px;
   overflow: hidden;
   -webkit-transition: background-position 0.3s;
@@ -41,7 +41,7 @@ exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
   background-position: 0 0;
 }
 
-.c3 ul {
+.c2 ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -53,40 +53,25 @@ exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
   background-color: #141414;
 }
 
-.c3 li {
+.c2 li {
   margin: 0 1rem;
   text-transform: uppercase;
 }
 
-.c3 a {
+.c2 a {
   color: white;
 }
 
-.c3 a:hover {
+.c2 a:hover {
   color: #e0e0e0;
 }
 
-.c4 {
+.c3 {
   display: none;
 }
 
-.c2 {
-  position: absolute;
-  z-index: 1;
-  right: 50%;
-  -webkit-transform: translate(50%);
-  -ms-transform: translate(50%);
-  transform: translate(50%);
-  top: 59px;
-  width: 124px;
-  height: 210px;
-  background: url("../static/images/header/mocmennemcom.svg") no-repeat center center;
-  -webkit-animation: 0.5s ease-out 1s 1 slideDown;
-  animation: 0.5s ease-out 1s 1 slideDown;
-}
-
 @media (max-width:700px) {
-  .c3 {
+  .c2 {
     position: absolute;
     top: 60px;
     left: 0;
@@ -95,21 +80,21 @@ exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
     padding: 0;
   }
 
-  .c3 ul {
+  .c2 ul {
     display: none;
   }
 
-  .c3 li {
+  .c2 li {
     height: 4rem;
   }
 }
 
 @media (max-width:700px) {
-  .c4 {
+  .c3 {
     display: block;
   }
 
-  .c4 div {
+  .c3 div {
     width: 30px;
     height: 3px;
     background-color: #fff;
@@ -125,11 +110,8 @@ exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
     >
       Michael Nease
     </h1>
-    <div
-      class="c2"
-    />
     <nav
-      class="c3"
+      class="c2"
     >
       <ul>
         <li>
@@ -167,7 +149,7 @@ exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
       </ul>
     </nav>
     <div
-      class="c4"
+      class="c3"
     >
       <div />
       <div />

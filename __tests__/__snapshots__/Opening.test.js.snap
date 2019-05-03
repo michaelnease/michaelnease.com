@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Opening /> Should match Snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: gray;
+  position: relative;
+  height: 100vh;
+  background: url("/static/images/quotes/quotes.gif") no-repeat center center;
+  background-size: cover;
+  min-height: 6.2rem;
+  border-bottom: 10px solid #141414;
+}
+
+.c3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-65%);
+  -ms-transform: translate(-50%,-65%);
+  transform: translate(-50%,-65%);
+  width: 50rem;
+  height: 25rem;
+}
+
+.c4 {
+  background-color: #fff;
+  margin: 0 0 15px 0;
+  padding: 15px;
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.c4 q {
+  font-size: 1.4rem;
+}
+
+.c5 {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.c2 {
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 124px;
+  height: 210px;
+  background: url("/static/images/header/mocmennemcom.svg") no-repeat center center;
+  -webkit-animation: gGKbGi 0.5s ease-in 1.5s 1 normal both running;
+  animation: gGKbGi 0.5s ease-in 1.5s 1 normal both running;
+}
+
+.c1 {
+  background-image: url("/static/images/common/texture.png");
+  height: 100%;
+}
+
+@media (max-width:700px) {
+  .c3 {
+    width: 100%;
+  }
+}
+
+<section
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      />
+      <div
+        class="c3"
+      >
+        <ul>
+          <li>
+            <blockquote
+              class="c4"
+            >
+              <q>
+                If debugging is the process of removing software bugs, then programming must be the process of putting them in.
+              </q>
+              <cite
+                class="c5"
+              >
+                Edsger Dijkstra
+              </cite>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote
+              class="c4"
+            >
+              <q>
+                The best performance improvement is the transition from the nonworking state to the working state.
+              </q>
+              <cite
+                class="c5"
+              >
+                J. Osterhout
+              </cite>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote
+              class="c4"
+            >
+              <q>
+                Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.
+              </q>
+              <cite
+                class="c5"
+              >
+                Don’t worry if it doesn’t work right. 
+                <br />
+                If everything did, you’d be out of a job.
+              </cite>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

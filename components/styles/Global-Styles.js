@@ -8,6 +8,14 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/static/fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
   html {
     box-sizing: border-box;
     font-size: 10px;

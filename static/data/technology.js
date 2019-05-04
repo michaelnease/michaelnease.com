@@ -1,50 +1,62 @@
 export const technology = [
   {
-    skill: "React",
+    id: 1,
+    name: "React",
     rating: 8.5
   },
   {
-    skill: "Redux",
+    id: 2,
+    name: "Redux",
     rating: 8.5
   },
   {
-    skill: "Javascript",
+    id: 3,
+    name: "Javascript",
     rating: 9
   },
   {
-    skill: "CSS",
+    id: 4,
+    name: "CSS",
     rating: 9
   },
   {
-    skill: "HTML",
+    id: 5,
+    name: "HTML",
     rating: 9
   },
   {
-    skill: "Node",
+    id: 6,
+    name: "Node",
     rating: 8
   },
   {
-    skill: "Express",
+    id: 7,
+    name: "Express",
     rating: 9
   },
   {
-    skill: "MongoDB",
+    id: 8,
+    name: "MongoDB",
     rating: 8
   },
   {
-    skill: "jQuery",
+    id: 9,
+    name: "Docker",
     rating: 8.5
   },
   {
-    skill: "Git",
+    id: 10,
+    name: "Git",
     rating: 9
   },
   {
-    skill: "Ruby",
+    id: 11,
+    name: "Ruby",
     rating: 8.5
   },
   {
-    skill: "PHP",
+    id: 12,
+    name: "AWS",
     rating: 8
   }
 ];

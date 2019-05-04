@@ -1,19 +1,18 @@
-import { Tech, List, Texture } from "./styles";
+import { Framework, Texture, FrameworkList, ListItem } from "./styles";
 import { technology } from "../static/data/technology";
 
-const Bio = () => {
-  console.log("tech: ", technology);
+const Technology = () => {
   return (
-    <Tech>
+    <Framework>
       <Texture>
-        <List>
-          {technology.map(subject => {
-            return <p>{subject.skill}</p>;
-          })}
-        </List>
+        <FrameworkList>
+          {technology.map(({ id, name }) => (
+            <ListItem key={id} name={name} />
+          ))}
+        </FrameworkList>
       </Texture>
-    </Tech>
+    </Framework>
   );
 };
 
-export default Bio;
+export default Technology;

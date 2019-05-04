@@ -12,7 +12,6 @@ export const AboutContent = styled.div`
   height: 80rem;
   align-items: center;
   justify-content: center;
-  border: 1px solid;
 `;
 
 export const Blurb = styled.div`

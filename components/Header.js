@@ -24,8 +24,12 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a onMouseEnter={handleMouseEnter} name="antenna" href="#skill">
-              Skills
+            <a
+              onMouseEnter={handleMouseEnter}
+              name="antenna"
+              href="#technology"
+            >
+              Technology
             </a>
           </li>
           <li>

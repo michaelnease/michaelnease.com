@@ -49,7 +49,7 @@ describe("<Opening />", () => {
         .childAt(2)
         .text()
     ).toBe(
-      "Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.Don’t worry if it doesn’t work right. If everything did, you’d be out of a job."
+      "Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.Steve Jobs"
     );
   });
 

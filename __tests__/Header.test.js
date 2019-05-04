@@ -38,7 +38,7 @@ describe("<Header />", () => {
         .find("Navigation ul")
         .childAt(1)
         .text()
-    ).toBe("Skills");
+    ).toBe("Technology");
     expect(
       wrapper
         .find("Navigation ul")

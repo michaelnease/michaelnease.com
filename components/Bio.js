@@ -16,8 +16,8 @@ const Bio = () => {
             </p>
             <Rex src="/static/images/bio/rex.jpg" />
             <p>
-              If I am not writing code, you will probably find me walking my 🐕
-              named Rex through Griffith Park or surfing in Redondo Beach. I
+              If I am not writing code, you will probably find me walking my
+              🐕named Rex through Griffith Park or surfing in Redondo Beach. I
               have recently started listening to tech talks at breweries - what
               could be more enjoyable than learning new technologies while
               having a beer?

@@ -124,10 +124,10 @@ exports[`<Header /> Should match Snapshot 1`] = `
         </li>
         <li>
           <a
-            href="#skill"
+            href="#technology"
             name="antenna"
           >
-            Skills
+            Technology
           </a>
         </li>
         <li>

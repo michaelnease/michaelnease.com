@@ -17,6 +17,7 @@ export const AboutContent = styled.div`
 export const Blurb = styled.div`
   width: 60rem;
   p {
+    text-align: justify;
     font-weight: 300;
     font-size: 1.7rem;
     margin-bottom: 20px;

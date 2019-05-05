@@ -1,8 +1,13 @@
+import { Form } from "./styles";
+
 const Contact = () => {
   return (
-    <div>
-      <p>Contact</p>
-    </div>
+    <Form>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <textarea name="message" rows="10" cols="30" placeholder="Message" />
+      <button>Send Message</button>
+    </Form>
   );
 };
 

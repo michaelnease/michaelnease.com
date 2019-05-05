@@ -48,6 +48,7 @@ export const Navigation = styled.nav`
   li {
     margin: 0 1rem;
     text-transform: uppercase;
+    font-weight: 300;
   }
   a {
     color: white;

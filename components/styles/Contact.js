@@ -21,6 +21,7 @@ export const Inputs = styled.div`
     background-color: ${props => props.theme.colors.gray};
     padding-left: 3rem;
     font-size: 1.5rem;
+    box-shadow: ${props => props.theme.effects.bs};
   }
 
   input {
@@ -39,5 +40,6 @@ export const Inputs = styled.div`
     border: none;
     background-color: ${props => props.theme.colors.black};
     color: ${props => props.theme.colors.gray};
+    box-shadow: ${props => props.theme.effects.bs};
   }
 `;

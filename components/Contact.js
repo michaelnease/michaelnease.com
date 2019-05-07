@@ -13,33 +13,31 @@ const Contact = () => {
   };
 
   return (
-    <Texture>
-      <Form>
-        <Inputs>
-          <input
-            type="text"
-            placeholder="Name"
-            value={name}
-            onChange={e => setName(e.target.value)}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-          />
-          <textarea
-            name="message"
-            rows="10"
-            cols="30"
-            placeholder="Message"
-            value={message}
-            onChange={e => setMessage(e.target.value)}
-          />
-          <button onClick={handleSendMessage}>Send Message</button>
-        </Inputs>
-      </Form>
-    </Texture>
+    <Form>
+      <Inputs>
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+        />
+        <textarea
+          name="message"
+          rows="10"
+          cols="30"
+          placeholder="Message"
+          value={message}
+          onChange={e => setMessage(e.target.value)}
+        />
+        <button onClick={handleSendMessage}>Send Message</button>
+      </Inputs>
+    </Form>
   );
 };
 

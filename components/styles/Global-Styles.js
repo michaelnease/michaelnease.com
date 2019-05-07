@@ -15,7 +15,6 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
   }
 
-
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -53,6 +52,10 @@ const GlobalStyles = createGlobalStyle`
   }
   
   button {  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+  textarea:focus, input:focus{
+    outline: none;
+  }
 `;
 
 export default GlobalStyles;

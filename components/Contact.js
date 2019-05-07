@@ -1,17 +1,45 @@
-import { Form } from "./styles";
+import { useState } from "react";
+import { Form, Inputs, Texture } from "./styles";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const handleSendMessage = () => {
-    console.log("send message");
+    console.log("name: ", name);
+    console.log("email: ", email);
+    console.log("message: ", message);
   };
 
   return (
-    <Form>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <textarea name="message" rows="10" cols="30" placeholder="Message" />
-      <button onClick={handleSendMessage}>Send Message</button>
-    </Form>
+    <Texture>
+      <Form>
+        <Inputs>
+          <input
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
+          <textarea
+            name="message"
+            rows="10"
+            cols="30"
+            placeholder="Message"
+            value={message}
+            onChange={e => setMessage(e.target.value)}
+          />
+          <button onClick={handleSendMessage}>Send Message</button>
+        </Inputs>
+      </Form>
+    </Texture>
   );
 };
 

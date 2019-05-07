@@ -5,6 +5,7 @@ export const Selected = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 10px solid ${props => props.theme.colors.black};
 `;
 
 export const Work = styled.section`

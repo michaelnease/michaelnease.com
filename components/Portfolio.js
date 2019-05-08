@@ -4,6 +4,7 @@ import Image from "./Image";
 const Portfolio = () => {
   return (
     <Texture>
+      <a name="portfolio" />
       <Selected>
         <Work>
           {portfolio.map(({ id, src, span }) => (

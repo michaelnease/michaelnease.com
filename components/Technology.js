@@ -1,9 +1,10 @@
-import { Framework, Texture, FrameworkList, ListItem } from "./styles";
+import { Framework, Texture, FrameworkList, ListItem, Landing } from "./styles";
 import { technology } from "../static/data/technology";
 
 const Technology = () => {
   return (
     <Framework>
+      <Landing name="technology" />
       <Texture>
         <FrameworkList>
           {technology.map(({ id, name }) => (

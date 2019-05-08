@@ -3,6 +3,7 @@ import { About, Blurb, AboutContent, Rex, Texture } from "./styles";
 const Bio = () => {
   return (
     <About>
+      <a name="about" />
       <Texture>
         <AboutContent>
           <Blurb>

@@ -14,6 +14,7 @@ const Contact = () => {
 
   return (
     <Form>
+      <a name="contact" />
       <Inputs>
         <input
           type="text"

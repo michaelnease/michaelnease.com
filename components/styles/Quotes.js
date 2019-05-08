@@ -61,3 +61,9 @@ export const Dropdown = styled.div`
     center;
   animation: ${move} 0.5s ease-in 1.5s 1 normal both running;
 `;
+
+export const Link = styled.a`
+  display: block;
+  position: relative;
+  top: -70px;
+`;

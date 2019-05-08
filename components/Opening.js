@@ -1,8 +1,9 @@
-import { Quotes, Dropdown, Cites, Quote, Texture, Cite } from "./styles";
+import { Quotes, Dropdown, Cites, Quote, Texture, Cite, Link } from "./styles";
 
 const Opening = () => {
   return (
     <Quotes>
+      <Link name="home" />
       <Texture>
         <Dropdown />
         <Cites>

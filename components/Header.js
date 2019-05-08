@@ -15,7 +15,9 @@ const Header = () => {
 
   return (
     <Bar>
-      <Invader invader={name}>Michael Nease</Invader>
+      <a href="#home">
+        <Invader invader={name}>Michael Nease</Invader>
+      </a>
       <Navigation open={open}>
         <ul>
           <li>

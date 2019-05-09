@@ -1,6 +1,6 @@
 export * from "./Header";
 export * from "./Quotes";
-export * from "./Bio";
+export * from "./About";
 export * from "./Technology";
 export * from "./Portfolio";
 export * from "./Contact";

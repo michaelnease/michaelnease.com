@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Item from "../Item";
 import List from "../List";
 
-export const Framework = styled.section`
+export const TechnologyStyled = styled.section`
   position: relative;
   background: url("/static/images/technology/technology.gif") no-repeat center
     center;

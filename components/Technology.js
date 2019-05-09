@@ -1,9 +1,15 @@
-import { Framework, Texture, FrameworkList, ListItem, Landing } from "./styles";
+import {
+  TechnologyStyled,
+  Texture,
+  FrameworkList,
+  ListItem,
+  Landing
+} from "./styles";
 import { technology } from "../static/data/technology";
 
 const Technology = () => {
   return (
-    <Framework>
+    <TechnologyStyled>
       <Landing name="technology" />
       <Texture>
         <FrameworkList>
@@ -12,7 +18,7 @@ const Technology = () => {
           ))}
         </FrameworkList>
       </Texture>
-    </Framework>
+    </TechnologyStyled>
   );
 };
 

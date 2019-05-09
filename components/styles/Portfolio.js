@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import Image from "../Image";
 
-export const Selected = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+export const PortfolioStyled = styled.section`
   border-bottom: 10px solid ${props => props.theme.colors.black};
 `;
 

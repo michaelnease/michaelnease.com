@@ -1,20 +1,14 @@
 import styled from "styled-components";
 
-export const About = styled.section`
+export const AboutStyled = styled.section`
+  height: 80rem;
   position: relative;
   background: url("/static/images/bio/bio.gif") no-repeat center center;
   background-size: cover;
   border-bottom: 10px solid ${props => props.theme.colors.black};
 `;
 
-export const AboutContent = styled.div`
-  display: flex;
-  height: 80rem;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Blurb = styled.div`
+export const Text = styled.div`
   width: 60rem;
   p {
     text-align: justify;

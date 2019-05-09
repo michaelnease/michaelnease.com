@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-export const Quotes = styled.section`
+export const QuotesStyled = styled.section`
   background-color: gray;
   position: relative;
   height: 100vh;
@@ -10,23 +10,12 @@ export const Quotes = styled.section`
   border-bottom: 10px solid ${props => props.theme.colors.black};
 `;
 
-export const Cites = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -65%);
-  width: 50rem;
-  height: 25rem;
-  @media (max-width: 700px) {
-    width: 100%;
-  }
-`;
-
 export const Quote = styled.blockquote`
   background-color: ${props => props.theme.colors.white};
   margin: 0 0 ${props => props.theme.spacing.margin} 0;
   padding: ${props => props.theme.spacing.padding};
   box-shadow: ${props => props.theme.effects.bs};
+  width: 50rem;
   q {
     font-size: 1.4rem;
   }

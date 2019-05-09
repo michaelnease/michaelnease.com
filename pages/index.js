@@ -1,7 +1,6 @@
-import Link from "next/link";
 import Header from "../components/Header";
-import Opening from "../components/Opening";
-import Bio from "../components/Bio";
+import Quotes from "../components/Quotes";
+import About from "../components/About";
 import Technology from "../components/Technology";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
@@ -10,8 +9,8 @@ import Footer from "../components/Footer";
 const Home = () => (
   <div>
     <Header />
-    <Opening />
-    <Bio />
+    <Quotes />
+    <About />
     <Technology />
     <Portfolio />
     <Contact />

@@ -1,4 +1,4 @@
-import { PortfolioStyled, Work, Texture, PortfolioImage } from "./styles";
+import { PortfolioStyled, Work, Texture, PortfolioImage, Link } from "./styles";
 import { portfolio } from "../static/data/portfolio";
 import Image from "./Image";
 
@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <PortfolioStyled>
       <Texture>
-        <a name="portfolio" />
+        <Link name="portfolio" />
         <Work>
           {portfolio.map(({ id, src, span }) => (
             <PortfolioImage key={id} src={src} span={span} />

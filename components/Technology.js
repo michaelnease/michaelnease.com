@@ -3,14 +3,15 @@ import {
   Texture,
   FrameworkList,
   ListItem,
-  Landing
+  Landing,
+  Link
 } from "./styles";
 import { technology } from "../static/data/technology";
 
 const Technology = () => {
   return (
     <TechnologyStyled>
-      <Landing name="technology" />
+      <Link name="technology" />
       <Texture>
         <FrameworkList>
           {technology.map(({ id, name }) => (

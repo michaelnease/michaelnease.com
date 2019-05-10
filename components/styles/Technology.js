@@ -35,9 +35,3 @@ export const ListItem = styled(Item)`
     color: ${props => props.theme.colors.white};
   }
 `;
-
-export const Landing = styled.a`
-  display: block;
-  position: relative;
-  top: -60px;
-`;

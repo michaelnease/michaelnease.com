@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.section`
   display: flex;
+  position: relative;
   align-content: center;
   justify-content: center;
   background-color: ${props => props.theme.colors.darkGray};

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Image from "../Image";
 
 export const PortfolioStyled = styled.section`
+  position: relative;
   border-bottom: 10px solid ${props => props.theme.colors.black};
 `;
 

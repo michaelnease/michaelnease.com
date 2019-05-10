@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, Inputs } from "./styles";
+import { Form, Inputs, Link } from "./styles";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,7 +14,7 @@ const Contact = () => {
 
   return (
     <Form>
-      <a name="contact" />
+      <Link name="contact" />
       <Inputs>
         <input
           type="text"

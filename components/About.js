@@ -1,9 +1,9 @@
-import { AboutStyled, Text, Rex, Texture } from "./styles";
+import { AboutStyled, Text, Rex, Texture, Link } from "./styles";
 
 const About = () => {
   return (
     <AboutStyled>
-      <a name="about" />
+      <Link name="about" />
       <Texture>
         <Text>
           <p>

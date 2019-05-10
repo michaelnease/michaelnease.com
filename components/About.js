@@ -3,8 +3,8 @@ import { AboutStyled, Text, Rex, Texture } from "./styles";
 const About = () => {
   return (
     <AboutStyled>
+      <a name="about" />
       <Texture>
-        <a name="about" />
         <Text>
           <p>
             I am a Los Angeles based Front-End Software Engineer with over 10

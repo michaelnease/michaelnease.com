@@ -3,8 +3,8 @@ import { QuotesStyled, Dropdown, Quote, Texture, Cite, Link } from "./styles";
 const Quotes = () => {
   return (
     <QuotesStyled>
+      <Link name="quotes" />
       <Texture>
-        <Link name="home" />
         <Dropdown />
         <ul>
           <li>

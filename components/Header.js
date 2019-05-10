@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <Bar>
-      <a href="#home">
+      <a href="#quotes">
         <Invader invader={name}>Michael Nease</Invader>
       </a>
       <Navigation open={open}>

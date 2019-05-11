@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "test": "jest",
-    "build": "next build && next export -o ../server/dis",
+    "build": "next build && next export -o ../server/static/",
     "help": "next export -h",
     "start": "next start",
     "storybook": "start-storybook -p 6006",

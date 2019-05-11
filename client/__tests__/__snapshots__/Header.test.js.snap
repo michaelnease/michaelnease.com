@@ -56,6 +56,7 @@ exports[`<Header /> Should match Snapshot 1`] = `
 .c2 li {
   margin: 0 1rem;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .c2 a {
@@ -105,11 +106,15 @@ exports[`<Header /> Should match Snapshot 1`] = `
 <header
     class="c0"
   >
-    <h1
-      class="c1"
+    <a
+      href="#quotes"
     >
-      Michael Nease
-    </h1>
+      <h1
+        class="c1"
+      >
+        Michael Nease
+      </h1>
+    </a>
     <nav
       class="c2"
     >

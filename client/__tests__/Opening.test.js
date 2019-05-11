@@ -7,7 +7,7 @@ import "jest-styled-components";
 import { ThemeProvider } from "styled-components";
 
 import { theme } from "../components/styles/theme";
-import Opening from "../components/Opening";
+import Opening from "../components/Quotes";
 
 configure({ adapter: new Adapter() });
 
@@ -22,14 +22,14 @@ describe("<Opening />", () => {
     expect(wrapper.find("Texture").length).toBe(1);
   });
 
-  it("Should render 3 <Cites /> elements", () => {
-    expect(wrapper.find("Cites ul li").length).toBe(3);
+  it("Should render 3 <ul /> elements", () => {
+    expect(wrapper.find("ul li").length).toBe(3);
   });
 
-  it("Should render a <Cites /> elements", () => {
+  it("Should render a <ul /> elements", () => {
     expect(
       wrapper
-        .find("Cites ul")
+        .find("ul")
         .childAt(0)
         .text()
     ).toBe(
@@ -37,7 +37,7 @@ describe("<Opening />", () => {
     );
     expect(
       wrapper
-        .find("Cites ul")
+        .find("ul")
         .childAt(1)
         .text()
     ).toBe(
@@ -45,7 +45,7 @@ describe("<Opening />", () => {
     );
     expect(
       wrapper
-        .find("Cites ul")
+        .find("ul")
         .childAt(2)
         .text()
     ).toBe(

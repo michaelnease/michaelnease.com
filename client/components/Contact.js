@@ -7,9 +7,19 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleSendMessage = () => {
-    console.log("name: ", name);
-    console.log("email: ", email);
-    console.log("message: ", message);
+    const payload = {
+      name,
+      email,
+      message
+    };
+
+    fetch("/contact", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
   };
 
   return (

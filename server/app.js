@@ -7,11 +7,16 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var contactRouter = require("./routes/contact");
 
+var bodyParser = require("body-parser");
+
 var app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(logger("dev"));
 app.use(express.json());

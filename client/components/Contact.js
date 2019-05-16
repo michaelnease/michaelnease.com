@@ -1,65 +1,80 @@
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 import { Form, Inputs, Link } from "./styles";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
   const initialState = {
+    name: "",
+    email: "",
+    message: "",
     nameIsValid: false,
     emailIsValid: false,
     messageIsValid: false
   };
 
   const reducer = (state, action) => {
+    const {
+      name,
+      email,
+      message,
+      nameIsValid,
+      emailIsValid,
+      messageIsValid
+    } = action;
     switch (action.type) {
-      case "nameIsValid":
-        return { ...state, nameIsValid: action.valid };
-      case "emailIsValid":
-        return { ...state, emailIsValid: action.valid };
-      case "messageIsValid":
-        return { ...state, messageIsValid: action.valid };
+      case "name":
+        return { ...state, name, nameIsValid };
+      case "email":
+        return { ...state, email, emailIsValid };
+      case "message":
+        return { ...state, message, messageIsValid };
     }
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleNameInput = name => {
-    setName(name);
-    const valid = /^[a-zA-Z ]{2,45}$/.test(name);
-    dispatch({ type: "nameIsValid", valid });
+    const nameIsValid = /^[a-zA-Z ]{2,45}$/.test(name);
+    dispatch({ type: "name", name, nameIsValid });
   };
 
   const handleEmailInput = email => {
-    setEmail(email);
-    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    dispatch({ type: "emailIsValid", valid });
+    const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    dispatch({ type: "email", email, emailIsValid });
   };
 
   const handleMessageInput = message => {
-    setMessage(message);
-    const valid = message.length > 5 ? true : false;
-    dispatch({ type: "messageIsValid", valid });
+    const messageIsValid = message.length > 5 ? true : false;
+    dispatch({ type: "message", message, messageIsValid });
   };
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     const payload = {
       name,
       email,
       message
     };
 
-    fetch("/contact", {
+    const res = await fetch("/contact", {
       method: "post",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(payload)
     });
+
+    const content = await res.json();
+
+    console.log("content: ", content);
   };
 
-  const { nameIsValid, emailIsValid, messageIsValid } = state;
+  const {
+    name,
+    email,
+    message,
+    nameIsValid,
+    emailIsValid,
+    messageIsValid
+  } = state;
 
   return (
     <Form>
@@ -81,7 +96,7 @@ const Contact = () => {
         />
         <textarea
           name="message"
-          rows="10"
+          rows="8"
           cols="30"
           maxLength="400"
           placeholder="Message"

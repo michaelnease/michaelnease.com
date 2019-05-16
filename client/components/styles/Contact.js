@@ -30,7 +30,7 @@ export const Inputs = styled.div`
   }
 
   textarea {
-    padding-top: 3rem;
+    padding: 3rem;
     grid-column: span 2;
   }
 

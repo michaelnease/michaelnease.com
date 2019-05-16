@@ -43,4 +43,10 @@ export const Inputs = styled.div`
     color: ${props => props.theme.colors.gray};
     box-shadow: ${props => props.theme.effects.bs};
   }
+
+  button:disabled,
+  button[disabled] {
+    background-color: ${props => props.theme.colors.gray};
+    color: ${props => props.theme.colors.darkGray};
+  }
 `;

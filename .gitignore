@@ -89,6 +89,7 @@ typings/
 # Next.js
 .next/
 dist/
+out/
 
 # server dist files
-server/static/*
+server/static

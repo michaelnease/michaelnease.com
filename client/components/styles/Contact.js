@@ -33,20 +33,4 @@ export const Inputs = styled.div`
     padding: 3rem;
     grid-column: span 2;
   }
-
-  button {
-    font-size: 1.5rem;
-    grid-column: 2;
-    height: 5rem;
-    border: none;
-    background-color: ${props => props.theme.colors.black};
-    color: ${props => props.theme.colors.gray};
-    box-shadow: ${props => props.theme.effects.bs};
-  }
-
-  button:disabled,
-  button[disabled] {
-    background-color: ${props => props.theme.colors.gray};
-    color: ${props => props.theme.colors.darkGray};
-  }
 `;

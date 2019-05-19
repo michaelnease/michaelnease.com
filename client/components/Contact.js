@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import SendMessageButton from "./Send-Message-Button";
 import { Form, Inputs, Link } from "./styles";
 
 const Contact = () => {
@@ -8,7 +9,8 @@ const Contact = () => {
     message: "",
     nameIsValid: false,
     emailIsValid: false,
-    messageIsValid: false
+    messageIsValid: false,
+    isSendingMessage: false
   };
 
   const reducer = (state, action) => {
@@ -63,8 +65,6 @@ const Contact = () => {
     });
 
     const content = await res.json();
-
-    console.log("content: ", content);
   };
 
   const {
@@ -103,12 +103,12 @@ const Contact = () => {
           value={message}
           onChange={e => handleMessageInput(e.target.value)}
         />
-        <button
-          onClick={handleSendMessage}
+        <SendMessageButton
+          text="Send Message"
+          handleClick={handleSendMessage}
           disabled={!nameIsValid || !emailIsValid || !messageIsValid}
-        >
-          Send Message
-        </button>
+          sending={isSendingMessage}
+        />
       </Inputs>
     </Form>
   );

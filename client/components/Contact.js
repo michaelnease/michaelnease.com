@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useState, useReducer } from "react";
 import SendMessageButton from "./Send-Message-Button";
 import { Form, Inputs, Link } from "./styles";
 
@@ -12,6 +12,8 @@ const Contact = () => {
     messageIsValid: false,
     isSendingMessage: false
   };
+
+  const [content, setContent] = useState("");
 
   const reducer = (state, action) => {
     const {
@@ -62,9 +64,9 @@ const Contact = () => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(payload)
-    });
+    }).json();
 
-    const content = await res.json();
+    setContent(res);
   };
 
   const {
@@ -73,7 +75,8 @@ const Contact = () => {
     message,
     nameIsValid,
     emailIsValid,
-    messageIsValid
+    messageIsValid,
+    isSendingMessage
   } = state;
 
   return (

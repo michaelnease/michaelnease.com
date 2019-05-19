@@ -1,10 +1,10 @@
 import React from "react";
 import { SendMessage } from "./styles";
 
-const SendMessageButton = ({ handleClick, text, disabled }) => {
+const SendMessageButton = ({ handleClick, text, disabled, sending }) => {
   return (
-    <SendMessage handleClick={handleClick} disabled={disabled} sending>
-      {text}
+    <SendMessage onClick={handleClick} disabled={disabled}>
+      {sending ? "Sending ... " : `${text}`}
     </SendMessage>
   );
 };

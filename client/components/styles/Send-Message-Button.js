@@ -14,4 +14,8 @@ export const SendMessage = styled.button`
     background-color: ${props => props.theme.colors.gray};
     color: ${props => props.theme.colors.darkGray};
   }
+  &:active {
+    background-color: ${props => props.theme.colors.darkGray};
+    color: ${props => props.theme.colors.black};
+  }
 `;

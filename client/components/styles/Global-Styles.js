@@ -51,7 +51,11 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
   
-  button {  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  button { font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+  button:focus {
+    outline:0;
+  }
 
   textarea:focus, input:focus{
     outline: none;

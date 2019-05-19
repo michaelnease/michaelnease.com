@@ -7,75 +7,89 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
-    nameIsValid: false,
-    emailIsValid: false,
-    messageIsValid: false,
+    isNameValid: false,
+    isEmailValid: false,
+    isMessageValid: false,
     isSendingMessage: false
   };
 
-  const [content, setContent] = useState("");
+  const [response, setResponse] = useState("");
 
   const reducer = (state, action) => {
     const {
       name,
       email,
       message,
-      nameIsValid,
-      emailIsValid,
-      messageIsValid
+      isNameValid,
+      isEmailValid,
+      isMessageValid,
+      isSendingMessage
     } = action;
     switch (action.type) {
       case "name":
-        return { ...state, name, nameIsValid };
+        return { ...state, name, isNameValid };
       case "email":
-        return { ...state, email, emailIsValid };
+        return { ...state, email, isEmailValid };
       case "message":
-        return { ...state, message, messageIsValid };
+        return { ...state, message, isMessageValid };
+      case "isSendingMessage":
+        return { ...state, isSendingMessage };
+      case "clearForm":
+        return { ...initialState };
     }
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleNameInput = name => {
-    const nameIsValid = /^[a-zA-Z ]{2,45}$/.test(name);
-    dispatch({ type: "name", name, nameIsValid });
+    const isNameValid = /^[a-zA-Z ]{2,45}$/.test(name);
+    dispatch({ type: "name", name, isNameValid });
   };
 
   const handleEmailInput = email => {
-    const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    dispatch({ type: "email", email, emailIsValid });
+    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    dispatch({ type: "email", email, isEmailValid });
   };
 
   const handleMessageInput = message => {
-    const messageIsValid = message.length > 5 ? true : false;
-    dispatch({ type: "message", message, messageIsValid });
+    const isMessageValid = message.length > 5 ? true : false;
+    dispatch({ type: "message", message, isMessageValid });
   };
 
   const handleSendMessage = async () => {
+    dispatch({ type: "isSendingMessage", isSendingMessage: true });
     const payload = {
       name,
       email,
       message
     };
 
-    const res = await fetch("/contact", {
+    fetch("/contact", {
       method: "post",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(payload)
-    }).json();
-
-    setContent(res);
+    })
+      .then(response => response.json())
+      .then(data => {
+        setResponse(data);
+        dispatch({ type: "isSendingMessage", isSendingMessage: false });
+        dispatch({ type: "clearForm" });
+      })
+      .catch(error => {
+        console.error(error);
+        dispatch({ type: "clearForm" });
+      });
   };
 
   const {
     name,
     email,
     message,
-    nameIsValid,
-    emailIsValid,
-    messageIsValid,
+    isNameValid,
+    isEmailValid,
+    isMessageValid,
     isSendingMessage
   } = state;
 
@@ -109,7 +123,9 @@ const Contact = () => {
         <SendMessageButton
           text="Send Message"
           handleClick={handleSendMessage}
-          disabled={!nameIsValid || !emailIsValid || !messageIsValid}
+          disabled={
+            !isNameValid || !isEmailValid || !isMessageValid || isSendingMessage
+          }
           sending={isSendingMessage}
         />
       </Inputs>

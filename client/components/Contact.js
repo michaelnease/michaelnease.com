@@ -1,4 +1,4 @@
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 import SendMessageButton from "./Send-Message-Button";
 import { Form, Inputs, Link } from "./styles";
 
@@ -7,19 +7,19 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    data: {},
     isNameValid: false,
     isEmailValid: false,
     isMessageValid: false,
     isSendingMessage: false
   };
 
-  const [response, setResponse] = useState("");
-
   const reducer = (state, action) => {
     const {
       name,
       email,
       message,
+      data,
       isNameValid,
       isEmailValid,
       isMessageValid,
@@ -32,10 +32,20 @@ const Contact = () => {
         return { ...state, email, isEmailValid };
       case "message":
         return { ...state, message, isMessageValid };
+      case "data":
+        return { ...state, data };
       case "isSendingMessage":
         return { ...state, isSendingMessage };
       case "clearForm":
-        return { ...initialState };
+        return {
+          ...state,
+          name: "",
+          email: "",
+          message: "",
+          isEmailValid: false,
+          isMessageValid: false,
+          isNameValid: false
+        };
     }
   };
 
@@ -73,7 +83,7 @@ const Contact = () => {
     })
       .then(response => response.json())
       .then(data => {
-        setResponse(data);
+        dispatch({ type: "data", data });
         dispatch({ type: "isSendingMessage", isSendingMessage: false });
         dispatch({ type: "clearForm" });
       })
@@ -87,6 +97,7 @@ const Contact = () => {
     name,
     email,
     message,
+    data,
     isNameValid,
     isEmailValid,
     isMessageValid,

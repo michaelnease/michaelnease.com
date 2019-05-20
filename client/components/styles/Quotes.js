@@ -15,9 +15,13 @@ export const Quote = styled.blockquote`
   margin: 0 0 ${props => props.theme.spacing.margin} 0;
   padding: ${props => props.theme.spacing.padding};
   box-shadow: ${props => props.theme.effects.bs};
+
   width: 50rem;
   q {
     font-size: 1.4rem;
+  }
+  @media (max-width: 700px) {
+    width: 30rem;
   }
 `;
 
@@ -49,6 +53,11 @@ export const Dropdown = styled.div`
   background: url("/static/images/header/mocmennemcom.svg") no-repeat center
     center;
   animation: ${move} 0.5s ease-in 1.5s 1 normal both running;
+
+  @media (max-width: 700px) {
+    width: 83px;
+    height: 140px;
+  }
 `;
 
 export const Link = styled.a`

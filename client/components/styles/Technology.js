@@ -22,6 +22,10 @@ export const FrameworkList = styled(List)`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
+
+    @media (max-width: 700px) {
+      width: 30rem;
+    }
   }
 `;
 

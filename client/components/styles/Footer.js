@@ -9,4 +9,9 @@ export const Foot = styled.footer`
   p {
     color: ${props => props.theme.colors.gray};
   }
+
+  @media (max-width: 700px) {
+    padding: 1rem;
+    margin: 0;
+  }
 `;

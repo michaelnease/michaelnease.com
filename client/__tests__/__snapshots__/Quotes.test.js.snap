@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Opening /> Should match Snapshot 1`] = `
+exports[`<Quotes /> Should match Snapshot 1`] = `
 <DocumentFragment>
   .c0 {
   background-color: gray;
@@ -67,6 +67,19 @@ exports[`<Opening /> Should match Snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+@media (max-width:700px) {
+  .c4 {
+    width: 30rem;
+  }
+}
+
+@media (max-width:700px) {
+  .c3 {
+    width: 83px;
+    height: 140px;
+  }
 }
 
 <section

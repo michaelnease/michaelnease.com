@@ -7,12 +7,12 @@ import "jest-styled-components";
 import { ThemeProvider } from "styled-components";
 
 import { theme } from "../components/styles/theme";
-import Opening from "../components/Quotes";
+import Quotes from "../components/Quotes";
 
 configure({ adapter: new Adapter() });
 
-describe("<Opening />", () => {
-  const wrapper = shallow(<Opening />);
+describe("<Quotes />", () => {
+  const wrapper = shallow(<Quotes />);
 
   it("Should render <Dropdown /> element", () => {
     expect(wrapper.find("Dropdown").length).toBe(1);
@@ -56,7 +56,7 @@ describe("<Opening />", () => {
   it("Should match Snapshot", () => {
     const { asFragment } = render(
       <ThemeProvider theme={theme}>
-        <Opening />
+        <Quotes />
       </ThemeProvider>
     );
 

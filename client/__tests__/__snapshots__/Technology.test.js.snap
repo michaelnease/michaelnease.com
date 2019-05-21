@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Technology /> Should match Snapshot 1`] = `
+<DocumentFragment>
+  .c1 {
+  position: absolute;
+  top: -60px;
+}
+
+.c0 {
+  position: relative;
+  background: url("/static/images/technology/technology.gif") no-repeat center center;
+  background-size: cover;
+  border-bottom: 10px solid #141414;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48rem;
+}
+
+.c3 > div {
+  width: 70rem;
+  height: 40rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #141414;
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.c4 span {
+  color: #fff;
+}
+
+.c2 {
+  background-image: url("/static/images/common/texture.png");
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:700px) {
+  .c3 > div {
+    width: 30rem;
+  }
+}
+
+<section
+    class="c0"
+  >
+    <a
+      class="c1"
+      name="technology"
+    />
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <div>
+          <div
+            class="c4"
+          >
+            <span>
+              React
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              Redux
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              Javascript
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              CSS
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              HTML
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              Node
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              Express
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              MongoDB
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              Docker
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              Git
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              Ruby
+            </span>
+          </div>
+          <div
+            class="c4"
+          >
+            <span>
+              AWS
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

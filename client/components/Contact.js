@@ -97,7 +97,6 @@ const Contact = () => {
     name,
     email,
     message,
-    data,
     isNameValid,
     isEmailValid,
     isMessageValid,
@@ -112,6 +111,7 @@ const Contact = () => {
           type="text"
           maxLength="45"
           placeholder="Name"
+          data-name="name"
           value={name}
           onChange={e => handleNameInput(e.target.value)}
         />
@@ -119,13 +119,14 @@ const Contact = () => {
           type="email"
           maxLength="45"
           placeholder="Email"
+          data-name="email"
           value={email}
           onChange={e => handleEmailInput(e.target.value)}
         />
         <textarea
-          name="message"
           rows="8"
           cols="30"
+          data-name="message"
           maxLength="400"
           placeholder="Message"
           value={message}

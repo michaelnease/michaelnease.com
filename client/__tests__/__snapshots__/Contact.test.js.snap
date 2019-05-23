@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> Should match Snapshot 1`] = `
+<DocumentFragment>
+  .c1 {
+  position: absolute;
+  top: -60px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #a9a9a9;
+  border-bottom: 10px solid #141414;
+  padding: 3rem;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80rem;
+  grid-gap: 1.5rem;
+}
+
+.c2 input,
+.c2 textarea {
+  border: none;
+  background-color: #e0e0e0;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.c2 input {
+  height: 5rem;
+}
+
+.c2 textarea {
+  padding: 3rem;
+  grid-column: span 2;
+}
+
+.c3 {
+  font-size: 1.5rem;
+  grid-column: 2;
+  height: 5rem;
+  border: none;
+  background-color: #141414;
+  color: #e0e0e0;
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.c3:disabled,
+.c3[disabled] {
+  background-color: #e0e0e0;
+  color: #a9a9a9;
+}
+
+.c3:active {
+  background-color: #a9a9a9;
+  color: #141414;
+}
+
+<form
+    class="c0"
+  >
+    <a
+      class="c1"
+      name="contact"
+    />
+    <div
+      class="c2"
+    >
+      <input
+        data-name="name"
+        maxlength="45"
+        placeholder="Name"
+        type="text"
+        value=""
+      />
+      <input
+        data-name="email"
+        maxlength="45"
+        placeholder="Email"
+        type="email"
+        value=""
+      />
+      <textarea
+        cols="30"
+        data-name="message"
+        maxlength="400"
+        placeholder="Message"
+        rows="8"
+      />
+      <button
+        class="c3"
+        disabled=""
+      >
+        Send Message
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;

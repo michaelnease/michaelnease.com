@@ -62,34 +62,6 @@ describe("<Contact />", () => {
     expect(messageInput.props().value).toBe("Hello, nice to meet you");
   });
 
-  // it("Should send a message", () => {
-  //   jest.spyOn(Contact, "handleSendMessage").mockImplementation(() =>
-  //     Promise.resolve({
-  //       data: {
-  //         name: "Michael",
-  //         email: "michael@gmail.com",
-  //         message: "Hello, nice to meet you"
-  //       }
-  //     })
-  //   );
-  //   nameInput = updateInput(wrapper, '[data-name="name"]', "Michael");
-  //   emailInput = updateInput(wrapper, '[data-name="email"]', "michael@gmail");
-  //   messageInput = updateInput(
-  //     wrapper,
-  //     '[data-name="message"]',
-  //     "Hello, nice to meet you"
-  //   );
-
-  //   expect(wrapper.find("Form")).simulate("submit", {
-  //     preventDefault: () => {}
-  //   });
-
-  //   expect(instance.handleSendMessage()).toHaveBeenCalledWith(
-  //     "Michael",
-  //     "michael@gmail.com",
-  //     "Hello, nice to meet you"
-  //   );
-  // });
   it("Should match Snapshot", () => {
     const { asFragment } = render(
       <ThemeProvider theme={theme}>

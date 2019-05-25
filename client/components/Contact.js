@@ -32,11 +32,23 @@ const Contact = () => {
         return { ...state, email, isEmailValid };
       case "message":
         return { ...state, message, isMessageValid };
-      case "data":
-        return { ...state, data };
+      // case "data":
+      //   return { ...state, data };
       case "isSendingMessage":
         return { ...state, isSendingMessage };
-      case "clearForm":
+      case "messageSentSuccessfully":
+        return {
+          ...state,
+          data: data,
+          isSendingMessage: false,
+          name: "",
+          email: "",
+          message: "",
+          isEmailValid: false,
+          isMessageValid: false,
+          isNameValid: false
+        };
+      case "error":
         return {
           ...state,
           name: "",
@@ -83,13 +95,15 @@ const Contact = () => {
     })
       .then(response => response.json())
       .then(data => {
-        dispatch({ type: "data", data });
-        dispatch({ type: "isSendingMessage", isSendingMessage: false });
-        dispatch({ type: "clearForm" });
+        dispatch({
+          type: "messageSentSuccessfully",
+          data,
+          isSendingMessage: false
+        });
       })
       .catch(error => {
         console.error(error);
-        dispatch({ type: "clearForm" });
+        dispatch({ type: "error" });
       });
   };
 

@@ -32,11 +32,9 @@ const Contact = () => {
         return { ...state, email, isEmailValid };
       case "message":
         return { ...state, message, isMessageValid };
-      // case "data":
-      //   return { ...state, data };
       case "isSendingMessage":
         return { ...state, isSendingMessage };
-      case "messageSentSuccessfully":
+      case "isSuccessful":
         return {
           ...state,
           data: data,
@@ -96,7 +94,7 @@ const Contact = () => {
       .then(response => response.json())
       .then(data => {
         dispatch({
-          type: "messageSentSuccessfully",
+          type: "isSuccessful",
           data,
           isSendingMessage: false
         });

@@ -15,13 +15,18 @@ const Header = () => {
 
   return (
     <Bar>
-      <a href="#quotes">
+      <a href="#quotes" data-testid="quotes">
         <Invader invader={name}>Michael Nease</Invader>
       </a>
       <Navigation open={open}>
         <ul>
           <li>
-            <a onMouseEnter={handleMouseEnter} name="crab" href="#about">
+            <a
+              onMouseEnter={handleMouseEnter}
+              name="crab"
+              href="#about"
+              data-testid="about"
+            >
               About
             </a>
           </li>
@@ -30,17 +35,28 @@ const Header = () => {
               onMouseEnter={handleMouseEnter}
               name="antenna"
               href="#technology"
+              data-testid="technology"
             >
               Technology
             </a>
           </li>
           <li>
-            <a onMouseEnter={handleMouseEnter} name="legs" href="#portfolio">
+            <a
+              onMouseEnter={handleMouseEnter}
+              name="legs"
+              href="#portfolio"
+              data-testid="portfolio"
+            >
               Portfolio
             </a>
           </li>
           <li>
-            <a onMouseEnter={handleMouseEnter} name="octopus" href="#contact">
+            <a
+              onMouseEnter={handleMouseEnter}
+              name="octopus"
+              href="#contact"
+              data-testid="contact"
+            >
               Contact
             </a>
           </li>

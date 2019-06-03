@@ -19,7 +19,7 @@ const Header = () => {
         <Invader invader={name}>Michael Nease</Invader>
       </a>
       <Navigation open={open}>
-        <ul>
+        <ul data-testid="menu">
           <li>
             <a
               onMouseEnter={handleMouseEnter}
@@ -62,7 +62,7 @@ const Header = () => {
           </li>
         </ul>
       </Navigation>
-      <Hamburger onClick={handleHamburgerClick}>
+      <Hamburger onClick={handleHamburgerClick} data-testid="hamburger">
         <div />
         <div />
         <div />

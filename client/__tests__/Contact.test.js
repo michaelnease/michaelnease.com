@@ -25,15 +25,15 @@ describe("<Contact />", () => {
   const wrapper = shallow(<Contact />);
 
   it("Should allow users to fill out the <contact /> form", () => {
-    const nameInput = updateInput(wrapper, '[data-name="name"]', "Michael");
+    const nameInput = updateInput(wrapper, '[data-testid="name"]', "Michael");
     const emailInput = updateInput(
       wrapper,
-      '[data-name="email"]',
+      '[data-testid="email"]',
       "michael@gmail.com"
     );
     const messageInput = updateInput(
       wrapper,
-      '[data-name="message"]',
+      '[data-testid="message"]',
       "Hello, nice to meet you"
     );
 
@@ -44,15 +44,15 @@ describe("<Contact />", () => {
   });
 
   it("Should disable submit button if email is not valid", () => {
-    const nameInput = updateInput(wrapper, '[data-name="name"]', "Michael");
+    const nameInput = updateInput(wrapper, '[data-testid="name"]', "Michael");
     const emailInput = updateInput(
       wrapper,
-      '[data-name="email"]',
+      '[data-testid="email"]',
       "michael@gmail"
     );
     const messageInput = updateInput(
       wrapper,
-      '[data-name="message"]',
+      '[data-testid="message"]',
       "Hello, nice to meet you"
     );
 

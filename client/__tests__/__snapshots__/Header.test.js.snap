@@ -107,6 +107,7 @@ exports[`<Header /> Should match Snapshot 1`] = `
     class="c0"
   >
     <a
+      data-testid="quotes"
       href="#quotes"
     >
       <h1
@@ -118,9 +119,12 @@ exports[`<Header /> Should match Snapshot 1`] = `
     <nav
       class="c2"
     >
-      <ul>
+      <ul
+        data-testid="menu"
+      >
         <li>
           <a
+            data-testid="about"
             href="#about"
             name="crab"
           >
@@ -129,6 +133,7 @@ exports[`<Header /> Should match Snapshot 1`] = `
         </li>
         <li>
           <a
+            data-testid="technology"
             href="#technology"
             name="antenna"
           >
@@ -137,6 +142,7 @@ exports[`<Header /> Should match Snapshot 1`] = `
         </li>
         <li>
           <a
+            data-testid="portfolio"
             href="#portfolio"
             name="legs"
           >
@@ -145,6 +151,7 @@ exports[`<Header /> Should match Snapshot 1`] = `
         </li>
         <li>
           <a
+            data-testid="contact"
             href="#contact"
             name="octopus"
           >
@@ -155,6 +162,7 @@ exports[`<Header /> Should match Snapshot 1`] = `
     </nav>
     <div
       class="c3"
+      data-testid="hamburger"
     >
       <div />
       <div />

@@ -82,14 +82,14 @@ exports[`<Contact /> Should match Snapshot 1`] = `
       class="c2"
     >
       <input
-        data-name="name"
+        data-testid="name"
         maxlength="45"
         placeholder="Name"
         type="text"
         value=""
       />
       <input
-        data-name="email"
+        data-testid="email"
         maxlength="45"
         placeholder="Email"
         type="email"
@@ -97,13 +97,14 @@ exports[`<Contact /> Should match Snapshot 1`] = `
       />
       <textarea
         cols="30"
-        data-name="message"
+        data-testid="message"
         maxlength="400"
         placeholder="Message"
         rows="8"
       />
       <button
         class="c3"
+        data-testid="send"
         disabled=""
       >
         Send Message

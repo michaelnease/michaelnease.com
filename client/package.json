@@ -39,5 +39,9 @@
     "jest": "24.1.0",
     "jest-styled-components": "^6.3.1",
     "react-testing-library": "^5.4.2"
+  },
+  "engines": {
+    "node": "11.14.0",
+    "npm": "6.7.0"
   }
 }

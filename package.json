@@ -1,0 +1,13 @@
+{
+  "name": "michaelnease.com",
+  "description": "Michael Nease: Portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "heroku-postbuild": "echo This runs afterwards."
+  },
+  "engines": {
+    "node": "11.14.0",
+    "npm": "6.7.0"
+  }
+}

@@ -2,7 +2,7 @@ FROM node:11.14.0
 
 ENV PORT=3000
 
-MAINTAINER Michael Nease
+LABEL Michael Nease
 
 WORKDIR /var/www/
 
@@ -10,7 +10,7 @@ COPY client client
 COPY server server
 
 RUN cd ./client && npm install && npm run build
-RUN cd ./server && npm install && npm start
+RUN cd ./server && npm install
 
 EXPOSE $PORT
 
@@ -23,4 +23,4 @@ EXPOSE $PORT
 
 # RUN npm install
 
-# ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm", "start"]

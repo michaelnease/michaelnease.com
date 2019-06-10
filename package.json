@@ -3,8 +3,8 @@
   "description": "Michael Nease: Portfolio",
   "version": "1.0.0",
   "scripts": {
-    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-    "heroku-postbuild": "echo This runs afterwards."
+    "heroku-prebuild": "npm install --prefix ./client && npm run build --prefix ./client",
+    "heroku-postbuild": "npm install --prefix ./server && npm start --prefix ./server"
   },
   "engines": {
     "node": "11.14.0",

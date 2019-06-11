@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
 var nodemailer = require("nodemailer");
-// require("dotenv").config();
 
 router.post("/", function(req, res, next) {
   const { name, email, message } = req.body;

@@ -6,9 +6,9 @@ router.post("/", function(req, res, next) {
   const { name, email, message } = req.body;
 
   var transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
-    secureConnection: true,
-    port: 587,
+    host: `${process.env.HOST}`,
+    secureConnection: `${process.env.SECURECONNECTION}`,
+    port: `${process.env.PORT}`,
     auth: {
       user: `${process.env.USERNAME}`,
       pass: `${process.env.PASSWORD}`

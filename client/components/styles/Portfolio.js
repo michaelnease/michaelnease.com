@@ -12,6 +12,9 @@ export const Work = styled.section`
   grid-gap: 20px;
   width: 80rem;
   margin: 10rem 0;
+  @media (max-width: 700px) {
+    padding: 0 1rem;
+  }
 `;
 
 export const PortfolioImage = styled(Image)`

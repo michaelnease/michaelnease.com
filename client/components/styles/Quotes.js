@@ -8,6 +8,12 @@ export const QuotesStyled = styled.section`
   background-size: cover;
   min-height: 6.2rem;
   border-bottom: 10px solid ${props => props.theme.colors.black};
+
+  @media (max-width: 700px) {
+    ul {
+      margin-top: 3.15em;
+    }
+  }
 `;
 
 export const Quote = styled.blockquote`
@@ -15,8 +21,8 @@ export const Quote = styled.blockquote`
   margin: 0 0 ${props => props.theme.spacing.margin} 0;
   padding: ${props => props.theme.spacing.padding};
   box-shadow: ${props => props.theme.effects.bs};
-
   width: 50rem;
+
   q {
     font-size: 1.4rem;
   }

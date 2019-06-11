@@ -33,4 +33,10 @@ export const Inputs = styled.div`
     padding: 3rem;
     grid-column: span 2;
   }
+  @media (max-width: 700px) {
+    input,
+    textarea {
+      grid-column: span 2;
+    }
+  }
 `;

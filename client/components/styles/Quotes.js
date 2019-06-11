@@ -41,10 +41,10 @@ export const Cite = styled.cite`
 
 const move = keyframes`
   from {
-    top: -500px;
+    transform: translate(-50%, -500px);
   }
   to {
-    top: 0;
+    transform: translate(-50%, 0);
   }
 `;
 
@@ -53,7 +53,7 @@ export const Dropdown = styled.div`
   position: absolute;
   z-index: 1;
   left: 50%;
-  transform: translate(-50%);
+  top: 0;
   width: 124px;
   height: 210px;
   background: url("/static/images/header/mocmennemcom.svg") no-repeat center

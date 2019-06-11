@@ -71,6 +71,13 @@ exports[`<Contact /> Should match Snapshot 1`] = `
   color: #141414;
 }
 
+@media (max-width:700px) {
+  .c2 input,
+  .c2 textarea {
+    grid-column: span 2;
+  }
+}
+
 <form
     class="c0"
   >

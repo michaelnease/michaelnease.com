@@ -37,14 +37,12 @@ exports[`<Quotes /> Should match Snapshot 1`] = `
   position: absolute;
   z-index: 1;
   left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
+  top: 0;
   width: 124px;
   height: 210px;
   background: url("/static/images/header/mocmennemcom.svg") no-repeat center center;
-  -webkit-animation: gGKbGi 0.5s ease-in 1.5s 1 normal both running;
-  animation: gGKbGi 0.5s ease-in 1.5s 1 normal both running;
+  -webkit-animation: jtGTBD 0.5s ease-in 1.5s 1 normal both running;
+  animation: jtGTBD 0.5s ease-in 1.5s 1 normal both running;
 }
 
 .c1 {
@@ -67,6 +65,12 @@ exports[`<Quotes /> Should match Snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+@media (max-width:700px) {
+  .c0 ul {
+    margin-top: 3.15em;
+  }
 }
 
 @media (max-width:700px) {

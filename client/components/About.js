@@ -9,7 +9,7 @@ const About = () => {
           <p>
             I am a Los Angeles based Front-End Software Engineer with over 10
             years of development experience. The latter comes from working on
-            enterprise size websites which actively receive more than 2 million
+            enterprise websites which actively receive more than 2 million
             unique visitors a day. My duties include development of new features
             and components, active maintenance, code refactoring, as well as
             unit testing.

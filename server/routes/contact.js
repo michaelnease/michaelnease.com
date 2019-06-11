@@ -6,9 +6,10 @@ router.post("/", function(req, res, next) {
   const { name, email, message } = req.body;
 
   var transporter = nodemailer.createTransport({
-    host: `${process.env.HOST}`,
-    secureConnection: `${process.env.SECURECONNECTION}`,
-    port: `${process.env.PORT}`,
+    service: "Godaddy",
+    host: "smtpout.secureserver.net",
+    secureConnection: true,
+    port: 465,
     auth: {
       user: `${process.env.USERNAME}`,
       pass: `${process.env.PASSWORD}`

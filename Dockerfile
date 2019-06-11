@@ -14,13 +14,4 @@ RUN cd ./server && npm install
 
 EXPOSE $PORT
 
-# ENV NODE_ENV=production
-
-# COPY . /var/www
-# WORKDIR /var/www/server
-
-# # VOLUME ["/var/www"]
-
-# RUN npm install
-
 ENTRYPOINT ["npm", "start"]

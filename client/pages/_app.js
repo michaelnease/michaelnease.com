@@ -1,6 +1,11 @@
 import React from "react";
 import App, { Container } from "next/app";
+import Router from "next/router";
 import Layout from "../components/Layout";
+
+import * as gtag from "../lib/gtag";
+
+Router.events.on("routeChangeComplete", url => gtag.pageview(url));
 
 class MichaelNease extends App {
   static async getInitialProps({ Component, ctx }) {

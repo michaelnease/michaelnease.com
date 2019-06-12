@@ -93,3 +93,4 @@ out/
 
 # server dist files
 ./static
+./node_modules

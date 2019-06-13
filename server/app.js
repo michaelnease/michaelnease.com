@@ -7,6 +7,8 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var contactRouter = require("./routes/contact");
 
+var redirectToHTTPS = require("express-http-to-https").redirectToHTTPS;
+
 var bodyParser = require("body-parser");
 
 var app = express();
@@ -17,6 +19,8 @@ app.set("view engine", "pug");
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
 
 app.use(logger("dev"));
 app.use(express.json());

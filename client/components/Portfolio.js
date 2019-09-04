@@ -1,6 +1,5 @@
-import { PortfolioStyled, Work, Texture, PortfolioImage, Link } from "./styles";
-import { portfolio } from "../static/data/portfolio";
-import Image from "./Image";
+import { PortfolioStyled, Work, Texture, PortfolioImage, Link } from './styles';
+import { portfolio } from '../static/data/portfolio';
 
 const Portfolio = () => {
   return (

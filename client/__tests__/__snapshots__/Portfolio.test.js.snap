@@ -21,13 +21,13 @@ exports[`<Portfolio /> Should match Snapshot 1`] = `
 }
 
 .c4 {
-  grid-column: span 2;
+  grid-column: span 1;
   border: 2px solid #141414;
   box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
 }
 
 .c5 {
-  grid-column: span 1;
+  grid-column: span 2;
   border: 2px solid #141414;
   box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.2);
 }
@@ -70,30 +70,38 @@ exports[`<Portfolio /> Should match Snapshot 1`] = `
       >
         <img
           class="c4"
+          src="/static/images/portfolio/beyond-limits.gif"
+        />
+        <img
+          class="c4"
+          src="/static/images/portfolio/rentcom.gif"
+        />
+        <img
+          class="c5"
           src="/static/images/portfolio/drumoff2011.jpg"
         />
         <img
-          class="c4"
+          class="c5"
           src="/static/images/portfolio/drumoff2010.jpg"
         />
         <img
-          class="c4"
+          class="c5"
           src="/static/images/portfolio/sessions.jpg"
         />
         <img
-          class="c5"
+          class="c4"
           src="/static/images/portfolio/platinum-home.jpg"
         />
         <img
-          class="c5"
+          class="c4"
           src="/static/images/portfolio/platinum-pdp.jpg"
         />
         <img
-          class="c5"
+          class="c4"
           src="/static/images/portfolio/onlyincalifornia.jpg"
         />
         <img
-          class="c5"
+          class="c4"
           src="/static/images/portfolio/powerlevelreview.jpg"
         />
       </section>

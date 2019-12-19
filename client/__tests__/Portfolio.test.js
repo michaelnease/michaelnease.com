@@ -19,7 +19,7 @@ describe("<Portfolio />", () => {
   });
 
   it("Should render 7 <PortfolioImage /> elements", () => {
-    expect(wrapper.find("PortfolioImage").length).toBe(7);
+    expect(wrapper.find("PortfolioImage").length).toBe(9);
   });
 
   it("Should render <Work /> elements", () => {
@@ -28,41 +28,53 @@ describe("<Portfolio />", () => {
         .find("Work")
         .childAt(0)
         .prop("src")
-    ).toBe("drumoff2011.jpg");
+    ).toBe("beyond-limits.gif");
     expect(
       wrapper
         .find("Work")
         .childAt(1)
         .prop("src")
-    ).toBe("drumoff2010.jpg");
+    ).toBe("rentcom.gif");
     expect(
       wrapper
         .find("Work")
         .childAt(2)
         .prop("src")
-    ).toBe("sessions.jpg");
+    ).toBe("drumoff2011.jpg");
     expect(
       wrapper
         .find("Work")
         .childAt(3)
         .prop("src")
-    ).toBe("platinum-home.jpg");
+    ).toBe("drumoff2010.jpg");
     expect(
       wrapper
         .find("Work")
         .childAt(4)
         .prop("src")
-    ).toBe("platinum-pdp.jpg");
+    ).toBe("sessions.jpg");
     expect(
       wrapper
         .find("Work")
         .childAt(5)
         .prop("src")
-    ).toBe("onlyincalifornia.jpg");
+    ).toBe("platinum-home.jpg");
     expect(
       wrapper
         .find("Work")
         .childAt(6)
+        .prop("src")
+    ).toBe("platinum-pdp.jpg");
+    expect(
+      wrapper
+        .find("Work")
+        .childAt(7)
+        .prop("src")
+    ).toBe("onlyincalifornia.jpg");
+    expect(
+      wrapper
+        .find("Work")
+        .childAt(8)
         .prop("src")
     ).toBe("powerlevelreview.jpg");
   });
@@ -73,13 +85,13 @@ describe("<Portfolio />", () => {
         .find("Work")
         .childAt(0)
         .prop("span")
-    ).toBe(2);
+    ).toBe(1);
     expect(
       wrapper
         .find("Work")
         .childAt(1)
         .prop("span")
-    ).toBe(2);
+    ).toBe(1);
     expect(
       wrapper
         .find("Work")
@@ -91,13 +103,13 @@ describe("<Portfolio />", () => {
         .find("Work")
         .childAt(3)
         .prop("span")
-    ).toBe(1);
+    ).toBe(2);
     expect(
       wrapper
         .find("Work")
         .childAt(4)
         .prop("span")
-    ).toBe(1);
+    ).toBe(2);
     expect(
       wrapper
         .find("Work")

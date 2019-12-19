@@ -13,7 +13,7 @@ export const Form = styled.form`
 export const Inputs = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80rem;
+  width: 121.5rem;
   grid-gap: 1.5rem;
 
   input,
@@ -26,13 +26,14 @@ export const Inputs = styled.div`
   }
 
   input {
-    height: 5rem;
+    height: 7.4rem;
   }
 
   textarea {
     padding: 3rem;
     grid-column: span 2;
   }
+
   @media (max-width: 700px) {
     input,
     textarea {
@@ -40,3 +41,5 @@ export const Inputs = styled.div`
     }
   }
 `;
+
+//7.4 + 1.5 + 7.4 + 1.5

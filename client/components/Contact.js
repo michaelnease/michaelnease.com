@@ -144,10 +144,7 @@ const Contact = () => {
           value={message}
           onChange={e => handleMessageInput(e.target.value)}
         />
-        <div
-          className="g-recaptcha"
-          data-sitekey="6LdjqsgUAAAAAOYCCVDnZATGbPrgHcHSGKOjzmHe"
-        ></div>
+        <div />
         <SendMessageButton
           text="Send Message"
           handleClick={handleSendMessage}

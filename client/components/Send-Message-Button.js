@@ -1,11 +1,18 @@
 import React from "react";
-import { SendMessage } from "./styles";
+import { SendMessage, SendMessageWrapper, ReCaptcha } from "./styles";
 
 const SendMessageButton = ({ handleClick, text, disabled, sending }) => {
   return (
-    <SendMessage onClick={handleClick} disabled={disabled} data-testid="send">
-      {sending ? "Sending ... " : `${text}`}
-    </SendMessage>
+    <SendMessageWrapper>
+      <div
+        className="g-recaptcha"
+        data-sitekey="6LdjqsgUAAAAAOYCCVDnZATGbPrgHcHSGKOjzmHe"
+      ></div>
+
+      <SendMessage onClick={handleClick} disabled={disabled} data-testid="send">
+        {sending ? "Sending ... " : `${text}`}
+      </SendMessage>
+    </SendMessageWrapper>
   );
 };
 
